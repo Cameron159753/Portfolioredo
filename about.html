@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/colorswitch/style.css">
+    <link rel="stylesheet" href="./css/colorswitch/default.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+
+<body>
+  
+  
+
+<script src="./js/script.js"></script>
+<script>
+    var colorSheets = [
+        {
+            color: "#ff8400",
+            title: "Switch to Default",
+            href: "./css/colorswitch/default.css"
+        },
+        {
+            color: "#ff463a",
+            title: "Switch to Red",
+            href: "./css/colorswitch/red.css"
+        },
+        {
+            color: "#4bda28",
+            title: "Switch to Green",
+            href: "./css/colorswitch/green.css"
+        },
+        {
+            color: "#4650dc",
+            title: "Switch to Blue",
+            href: "./css/colorswitch/blue.css"
+        },
+        {
+            color: "#f41c54",
+            title: "Switch to Magenta",
+            href: "./css/colorswitch/magenta.css"
+        }
+    ];
+
+    ColorSwitcher.init(colorSheets);
+</script>
+<nav role='navigation'>
+    <div id="menuToggle">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu">
+        <a href="#">
+          <li>Home</li>
+        </a>
+        <a href="#">
+          <li>Portfolio</li>
+        </a>
+        <a href="#">
+          <li>About</li>
+        </a>
+        <a href="#">
+          <li>Contact</li>
+        </a>
+      </ul>
+    </div>
+  </nav>
+  <!-- about -->
+ 
+
+        <div class="abot">
+            <h1>About</h1>
+            
+               <div class="shado"> About</div>
+            
+            </div>
+            <div id="main">
+                <header class="container">
+                    <div id="img-div">
+                        <img id="image" src="images/me.jpg">
+                    </div>
+                    
+                    <h1 id="title">Cameron Bowers: Web Developer</h1>
+                   
+                </header>
+        
+                <main class="container">
+                    <h2 class="title">Biography</h2>
+                    <p class="bio-text">My name is Cameron Bowers. Im 20 years old, born and raised is South Africa. I attended Bergvliet High school at matriculated in 2019. I did a 4 month cource at codespace and Im now attending Lifechoices to pursue my passion of coding.
+                    </p>
+        
+               
+                </main>
+        
+               
+            </div>  
+         
+        
+</body>
+</html>

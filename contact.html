@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/colorswitch/default.css">
+    <link rel="stylesheet" href="css/colorswitch/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>Document</title>
+</head>
+<body>
+  <script src="./js/script.js"></script>
+<script>
+    var colorSheets = [
+        {
+            color: "#ff8400",
+            title: "Switch to Default",
+            href: "./css/colorswitch/default.css"
+        },
+        {
+            color: "#ff463a",
+            title: "Switch to Red",
+            href: "./css/colorswitch/red.css"
+        },
+        {
+            color: "#4bda28",
+            title: "Switch to Green",
+            href: "./css/colorswitch/green.css"
+        },
+        {
+            color: "#4650dc",
+            title: "Switch to Blue",
+            href: "./css/colorswitch/blue.css"
+        },
+        {
+            color: "#f41c54",
+            title: "Switch to Magenta",
+            href: "./css/colorswitch/magenta.css"
+        }
+    ];
+
+    ColorSwitcher.init(colorSheets);
+</script>
+<nav role='navigation'>
+  <div id="menuToggle">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul id="menu">
+      <a href="#">
+        <li>Home</li>
+      </a>
+      <a href="#">
+        <li>Portfolio</li>
+      </a>
+      <a href="#">
+        <li>About</li>
+      </a>
+      <a href="#">
+        <li>Contact</li>
+      </a>
+    </ul>
+  </div>
+</nav>
+
+<div class="abot">
+  <h1>Contact</h1>
+  
+     <div class="shado"> Contact</div>
+  
+  </div>
+    <div class="container">
+        <div class="card">
+          <i class="fas fa-envelope"></i>
+          <h2 class="card-title">Email</h2>
+          <p class="card-info">cameronbowers22@gmail.com</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-phone"></i>
+          <h2 class="card-title">Phone number</h2>
+          <p class="card-info">0729644591</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-map-marker-alt"></i>
+          <h2 class="card-title">Location</h2>
+          <p class="card-info">South Africa</p>
+        </div>
+      </div>
+
+      <main class="flexbox-col">
+
+        <div class="form-wrapper">
+          <form method="POST" action="https://formspree.io/f/xyylvzgn">
+          <form id="form" method="post" name="emailform" action="email.php">
+            <h3 class="form-title">Responsive Form</h3>
+          
+            <div class="form-input-grid">
+              <div>
+                <p class="form-text">Username*</p>
+                <div class="form-input-wrapper flexbox-left">
+                  <i class="uil uil-user"></i>
+                  <input class="form-input" id="uname" name="uname" type="text" placeholder="Username" aria-label="" required>
+                </div>
+              </div>
+              <div>
+              <!-- <p class="form-text">Password*</p>
+              <div class="form-input-wrapper flexbox-left">
+                <i class="uil uil-asterisk"></i>
+                <input class="form-input" id="pword" name="pword" type="password" placeholder="Password" aria-label="" required>
+              </div> -->
+            </div>
+          </div>
+          <div class="form-input-max">
+            <p class="form-text">Email*</p>
+            <div class="form-input-wrapper flexbox-left">
+              <i class="uil uil-at"></i>
+              <input class="form-input" id="email" name="email" type="email" placeholder="Email" aria-label="" required>
+            </div>
+          </div>
+          <div class="form-input-max">
+            <p class="form-text">Message* (Max 500)</p>
+            <div id="textarea" class="form-input-wrapper flexbox-left-start">
+              <i class="uil uil-comment-dots"></i>
+              <textarea class="form-input" id="message" name="message" placeholder="Your message" maxlength="500" aria-label="" required></textarea>
+            </div>
+           </div>
+           <div class="form-input-max flexbox-left">
+            <div class="button-wrapper">
+              <button id="form-button" type="submit" class="button btn-primary"><i class="uil uil-envelope-heart"></i> Send<div class="btn-secondary"></div></button>
+             </div>
+           </div>
+         </form>
+         </form>
+        </div>
+      
+      </main>
+</body>
+</html>
